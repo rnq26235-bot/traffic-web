@@ -1,76 +1,35 @@
 body{
-    margin:0;
-    font-family: 'Segoe UI', sans-serif;
+    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-/* HERO SECTION */
-.hero{
-    background-image: url('https://images.unsplash.com/photo-1492724441997-5dc865305da7?auto=format&fit=crop&w=1600&q=80');
-    background-size: cover;
-    background-position: center;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.countainer{
+    background-color: black;
+    padding: 30px;
+    border-radius: 150px;
+    margin-top: 50px;
 }
 
-/* DARK BOX */
-.overlay-box{
-    background: rgba(0,0,0,0.65);
-    padding:50px;
-    text-align:center;
-    border-radius:15px;
-    width:90%;
-    max-width:500px;
-    color:white;
+.sig{
+    width: 150px;
+    height: 145px;
+    background-color: rgb(65, 65, 65);
+    border-radius: 50%;
+    margin: 30px;
+
 }
 
-/* PROFILE IMAGE */
-.profile-img{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    border:5px solid white;
-    object-fit:cover;
-    margin-bottom:20px;
+.red:hover{
+    background-color: red;
 }
 
-/* TEXT */
-.overlay-box h1{
-    margin:10px 0;
-    font-size:28px;
+.yellow:hover{
+    background-color: yellow;
 }
 
-.overlay-box p{
-    margin:5px 0 15px;
-    font-size:16px;
-    opacity:0.9;
+.green:hover{
+    background-color: green;
 }
-
-/* EMAIL FORM */
-.email-form{
-    margin-top:15px;
-}
-
-.email-form input{
-    padding:10px;
-    width:60%;
-    border:none;
-    border-radius:5px;
-    outline:none;
-}
-
-.email-form button{
-    padding:10px 15px;
-    border:none;
-    background:#ff3b3b;
-    color:white;
-    border-radius:5px;
-    cursor:pointer;
-    font-weight:bold;
-}
-
-.email-form button:hover{
-    background:#cc0000;
-}
-
