@@ -1,18 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Traffic Single Light</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Communication & Media Blog</title>
+<link rel="stylesheet" href="style.css">
+</head>
 
-     <div class="countainer">
-        <div class="red sig"></div>
-        <div class="yellow sig"></div>
-        <div class="green sig"></div>
-     </div>
-    </body>
+<body>
+
+<header>
+    <div class="logo">Communication & Media Blog</div>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#blog">Articles</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <h1>The Art of Communication in Media & Society</h1>
+    <p>
+        A blog dedicated to understanding communication strategies, media influence,
+        and the digital transformation shaping our world.
+    </p>
+</section>
+
+<main id="blog">
+<div class="blog-container">
+
+<div class="posts">
+
+<!-- Post 1 -->
+<div class="post-card">
+<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" alt="Art of Communication">
+<h3>The Art of Communication</h3>
+<p>
+Communication is not only about speaking — it is about delivering messages clearly,
+understanding the audience, and creating meaningful connections.
+</p>
+<p class="full-text">
+Effective communication requires active listening, empathy, and adaptability.
+In professional and social environments, strong communication skills build trust,
+improve teamwork, and enhance leadership impact.
+</p>
+<button class="read-more-btn">Read More</button>
+</div>
+
+<!-- Post 2 -->
+<div class="post-card">
+<img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df" alt="Public Image">
+<h3>Building a Strong Public Image</h3>
+<p>
+Public image reflects how individuals and organizations are perceived
+by their audiences and communities.
+</p>
+<p class="full-text">
+A positive mental image is built through consistency, transparency,
+ethical behavior, and strategic communication.
+Public relations strategies play a vital role in shaping long-term reputation.
+</p>
+<button class="read-more-btn">Read More</button>
+</div>
+
+<!-- Post 3 -->
+<div class="post-card">
+<img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c" alt="Media Messages">
+<h3>The Power of Media Messages</h3>
+<p>
+Media messages influence public opinion, shape cultural narratives,
+and guide social conversations.
+</p>
+<p class="full-text">
+Through carefully crafted storytelling, visuals, and language,
+media platforms can raise awareness, promote ideas,
+and inspire change across societies.
+Understanding message framing is essential in modern communication.
+</p>
+<button class="read-more-btn">Read More</button>
+</div>
+
+<!-- Post 4 -->
+<div class="post-card">
+<img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2" alt="Social Media Impact">
+<h3>The Impact of Social Media</h3>
+<p>
+Social media platforms have transformed how people interact,
+share information, and build digital identities.
+</p>
+<p class="full-text">
+From brand building to activism, social media creates opportunities
+for engagement and influence. However, it also requires responsibility,
+ethical awareness, and strategic content planning.
+</p>
+<button class="read-more-btn">Read More</button>
+</div>
+
+</div>
+
+<aside class="sidebar">
+<h3>Categories</h3>
+<ul>
+<li>Communication Skills</li>
+<li>Public Relations</li>
+<li>Media Strategy</li>
+<li>Digital Communication</li>
+</ul>
+
+
+</aside>
+
+</div>
+</main>
+
+<section class="about" id="about">
+<h2>About This Blog</h2>
+<p>
+Communication & Media Blog is a platform dedicated to exploring the art of communication
+and the evolving landscape of modern media.
+</p>
+<p>
+The blog discusses key topics such as effective communication,
+building public image, the influence of media messages,
+and the impact of social media on society.
+</p>
+<p>
+In today's digital era, communication shapes opinions,
+builds reputations, and influences global conversations.
+This blog aims to provide insights and thoughtful analysis
+for students and professionals interested in media and communication.
+</p>
+</section>
+
+<section class="contact" id="contact">
+<h2>Contact Information</h2>
+<p>Email: <strong>ruqaya.nasser51@gmail.com</strong></p>
+<p>Phone: <strong>+973 37303001</strong></p>
+</section>
+
+<footer>
+<p>&copy; 2026 Communication & Media Blog</p>
+</footer>
+
+<script>
+document.querySelectorAll(".read-more-btn").forEach(button => {
+button.addEventListener("click", () => {
+const fullText = button.previousElementSibling;
+fullText.classList.toggle("show");
+button.textContent = fullText.classList.contains("show") ? "Read Less" : "Read More";
+});
+});
+</script>
+
+</body>
 </html>
